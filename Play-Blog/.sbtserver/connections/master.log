@@ -1,0 +1,37 @@
+New log file opened at Sat Sep 10 01:08:35 IST 2016 by 5760@DRAUNZER
+Taking next connection to: 53976
+New client attempting to connect on port: 53977-53976
+  Address = /192.168.0.100:53976
+This client on port 53977 has uuid 64dc04a1-9998-4a9b-9681-8d5b8d645d28 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-64dc04a1-9998-4a9b-9681-8d5b8d645d28
+Taking next connection to: 53976
+New client attempting to connect on port: 53978-53976
+  Address = /192.168.0.100:53976
+Handshake exception on socket: 53978
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 53976
+New client attempting to connect on port: 53979-53976
+  Address = /192.168.0.100:53976
+This client on port 53979 has uuid b8bd655c-0236-4c64-80dc-a194c57f3720 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-64dc04a1-9998-4a9b-9681-8d5b8d645d28, activator-b8bd655c-0236-4c64-80dc-a194c57f3720
+Taking next connection to: 53976
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 5760@DRAUNZER logs at Sat Sep 10 01:11:43 IST 2016, goodbye.
